@@ -13,25 +13,6 @@ urlpatterns = [
     path('logout/', logout, name='logout'),
 
     path('password-reset/', UserForgotPasswordView.as_view(), name='password_reset'),
-    path('password-reset/done/', user_password_reset_done_view, name='password_reset_done'),
-    # path('password-reset/done/', UserPasswordResetDoneView.as_view(), name='password_reset_done'),
-
-    # path('password-reset/done/',
-    #      PasswordResetDoneView.as_view(template_name="registration/password_reset_done.html"),
-    #      name='password_reset_done'),
-
-    # path('password-reset/',
-    #      PasswordResetView.as_view(
-    #          template_name="registration/password_reset_form.html",
-    #          title='Store - пароль',
-    #      ),
-    #      name='password_reset'),
-    #
-    # path('password-reset/done/',
-    #      PasswordResetDoneView.as_view(
-    #          template_name="registration/password_reset_done.html",
-    #          title='Store - пароль',
-    #      ),
-    #      name='password_reset_done'),
+    path('password-reset/done/', user_password_reset_done_view, name='password_reset_done')
 
 ]

@@ -1,11 +1,8 @@
 from django import forms
 from django.contrib.auth.forms import (AuthenticationForm, UserChangeForm,
-                                       UserCreationForm, PasswordResetForm, SetPasswordForm)
+                                       UserCreationForm, PasswordResetForm)
 
 from users.models import User
-
-
-# from users.tasks import send_email_verification
 
 
 class UserLoginForm(AuthenticationForm):
@@ -62,6 +59,3 @@ class UserForgotPasswordForm(PasswordResetForm):
     class Meta:
         model = User
         fields = ('email',)
-
-# class UserSetNewPasswordForm(SetPasswordForm):
-#     pass

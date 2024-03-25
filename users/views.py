@@ -58,9 +58,3 @@ class UserForgotPasswordView(SuccessMessageMixin, PasswordResetView):
 
 def user_password_reset_done_view(request: HttpRequest) -> HttpResponse:
     return render(request, "registration/password_reset_done.html")
-
-# class UserPasswordResetDoneView(SuccessMessageMixin, PasswordResetDoneView):
-#     model = User
-#     form_class = UserForgotPasswordForm
-#     template_name = 'registration/password_reset_done.html'
-#     title = 'Store - проверьте почту'
