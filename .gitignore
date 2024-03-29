@@ -7,6 +7,8 @@
 
 db.sqlite3
 .idea
+proba.py
+.env
 
 # User-specific stuff
 .idea/**/workspace.xml
